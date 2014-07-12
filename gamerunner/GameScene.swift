@@ -10,16 +10,24 @@ import SpriteKit
 
 class GameScene: SKScene {
     
-    let _runnerWidth = 75;
-    let _runnerHeight = 50;
+    let _runnerWidth = 75
+    let _runnerHeight = 50
+    let gravity = CGFloat(0.6)
     
+    var groundSpeed = 5
+    var onGround = true
+    var velocY = CGFloat(0)
+    
+    let ground:SKSpriteNode = SKSpriteNode(imageNamed:"ground.png")
     let runner:SKSpriteNode = SKSpriteNode(imageNamed: "runner.png")
     
     override func didMoveToView(view: SKView) {
+//        physicsWorld.contactDelegate = self
+        
         runner.size = CGSize(width: _runnerWidth, height: _runnerHeight)
-        runner.zPosition = 100;
+        runner.zPosition = 100
         runner.anchorPoint = CGPoint(x: 0.5, y: 0.5)
-        runner.position = CGPoint(x: 100, y: 100);
+        runner.position = CGPoint(x: 100, y: 100)
         self.addChild(runner);  //adds the sprite to the scene for drawing
         
 //        /* Setup your scene here */
@@ -36,8 +44,9 @@ class GameScene: SKScene {
         
         for touch : AnyObject in touches {
             let location = touch.locationInNode(self)
-            runner.xScale *= 1.1;
-            runner.yScale *= 1.1;
+            
+            //Make the sprite jump a bit.
+            
         }
         
         /* Called when a touch begins */
@@ -61,6 +70,7 @@ class GameScene: SKScene {
    
     override func update(currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
-        runner.runAction(SKAction.rotateByAngle(CGFloat(M_PI/8), duration:1))
+        //Spin the Runner.
+        runner.runAction(SKAction.rotateByAngle(CGFloat(M_PI/24), duration:1))
     }
 }
