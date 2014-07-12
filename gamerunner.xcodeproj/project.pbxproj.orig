@@ -8,10 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		00531E101971DDBA00182DD4 /* runner.png in Resources */ = {isa = PBXBuildFile; fileRef = 00531E0F1971DDBA00182DD4 /* runner.png */; };
+<<<<<<< HEAD
 		787017CE1971EBC700B35F52 /* PlayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787017CD1971EBC700B35F52 /* PlayScene.swift */; };
 		787017D01971ECF100B35F52 /* bottomBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 787017CF1971ECF100B35F52 /* bottomBar.png */; };
 		787017D31971EDAE00B35F52 /* block2.png in Resources */ = {isa = PBXBuildFile; fileRef = 787017D11971EDAE00B35F52 /* block2.png */; };
 		787017D41971EDAE00B35F52 /* block1.png in Resources */ = {isa = PBXBuildFile; fileRef = 787017D21971EDAE00B35F52 /* block1.png */; };
+=======
+		00A9CBF81971EAFB001D2565 /* ground.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A9CBF71971EAFB001D2565 /* ground.png */; };
+>>>>>>> master
 		B5BC6BD21971D532007D3470 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BC6BD11971D532007D3470 /* AppDelegate.swift */; };
 		B5BC6BD41971D532007D3470 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B5BC6BD31971D532007D3470 /* GameScene.sks */; };
 		B5BC6BD61971D532007D3470 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BC6BD51971D532007D3470 /* GameScene.swift */; };
@@ -33,10 +37,14 @@
 
 /* Begin PBXFileReference section */
 		00531E0F1971DDBA00182DD4 /* runner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runner.png; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		787017CD1971EBC700B35F52 /* PlayScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayScene.swift; sourceTree = "<group>"; };
 		787017CF1971ECF100B35F52 /* bottomBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bottomBar.png; path = ../../../bottomBar.png; sourceTree = "<group>"; };
 		787017D11971EDAE00B35F52 /* block2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = block2.png; path = ../../../block2.png; sourceTree = "<group>"; };
 		787017D21971EDAE00B35F52 /* block1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = block1.png; path = ../../../block1.png; sourceTree = "<group>"; };
+=======
+		00A9CBF71971EAFB001D2565 /* ground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ground.png; sourceTree = "<group>"; };
+>>>>>>> master
 		B5BC6BCC1971D532007D3470 /* gamerunner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gamerunner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5BC6BD01971D532007D3470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5BC6BD11971D532007D3470 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +103,7 @@
 				B5BC6BD71971D532007D3470 /* GameViewController.swift */,
 				B5BC6BD91971D532007D3470 /* Main.storyboard */,
 				B5BC6BDC1971D532007D3470 /* Images.xcassets */,
+				00A9CBF71971EAFB001D2565 /* ground.png */,
 				B5BC6BCF1971D532007D3470 /* Supporting Files */,
 			);
 			path = gamerunner;
@@ -217,6 +226,7 @@
 				787017D01971ECF100B35F52 /* bottomBar.png in Resources */,
 				787017D31971EDAE00B35F52 /* block2.png in Resources */,
 				00531E101971DDBA00182DD4 /* runner.png in Resources */,
+				00A9CBF81971EAFB001D2565 /* ground.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
