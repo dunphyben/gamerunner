@@ -12,16 +12,17 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     let runner = SKSpriteNode(imageNamed:"runner")
     let bar = SKSpriteNode(imageNamed:"bottomBar")
+    let bg = SKSpriteNode(imageNamed: "background.jpg")
     let blockSmall = SKSpriteNode(imageNamed:"blockSmall")
     let blockBig = SKSpriteNode(imageNamed:"blockBig")
     
     var barStartX = CGFloat(0)
     var maxBarX = CGFloat(0)
-    var groundSpeed = 5
+    var groundSpeed = 8
     var runnerBaseline = CGFloat(0)
     var onGround = true
     var yVelocity = CGFloat(0)
-    let gravity = CGFloat(0.6)
+    let gravity = CGFloat(0.9)
     
     var blockMaxX = CGFloat(0)
     var blockStartX = CGFloat(0)
@@ -35,13 +36,20 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.physicsWorld.contactDelegate = self
         
         // bottomBar positioning
-        self.bar.anchorPoint = CGPointMake(0,0)
+        self.bar.anchorPoint = CGPointMake(0,0.5)
         self.bar.position = CGPointMake(
             CGRectGetMinX(self.frame),
             CGRectGetMinY(self.frame) + (self.bar.size.height / 2))
         self.barStartX = self.bar.position.x
         self.maxBarX = self.bar.size.width - self.frame.size.width
         self.maxBarX *= -1
+        
+        // bg positioning
+        self.bg.zPosition = -1
+        self.bg.anchorPoint = CGPointMake(0,0.5)
+        self.bg.position = CGPointMake(
+            CGRectGetMinX(self.frame),
+            CGRectGetMinY(self.frame) + (self.bg.size.height / 2))
         
         // runner positioning
         self.runner.xScale *= 0.3
@@ -60,7 +68,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         // block 1 
         self.blockSmall.xScale *= 0.5
         self.blockSmall.yScale *= 0.5
-        self.blockSmall.anchorPoint = CGPointMake(0,0)
+        self.blockSmall.anchorPoint = CGPointMake(0.5,0.5)
         self.blockSmall.position = CGPointMake(CGRectGetMaxX(self.frame)
             + self.blockSmall.size.width, self.runnerBaseline)
         self.blockSmall.physicsBody = SKPhysicsBody(rectangleOfSize: self.blockSmall.size)
@@ -72,7 +80,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         // block 2 positioning
         self.blockBig.xScale *= 0.5
         self.blockBig.yScale *= 0.5
-        self.blockBig.anchorPoint = CGPointMake(0,0)
+        self.blockBig.anchorPoint = CGPointMake(0.5,0.5)
         self.blockBig.position = CGPointMake(CGRectGetMaxX(self.frame)
             + self.blockBig.size.width, self.runnerBaseline
                 + (self.blockSmall.size.height / 2))
@@ -96,6 +104,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.addChild(self.runner)
         self.addChild(self.blockSmall)
         self.addChild(self.blockBig)
+        self.addChild(self.bg)
     }
     
     func random() -> UInt32 {
@@ -124,6 +133,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             self.bar.position.x = self.barStartX
         }
         
+        if self.bg.position.x <= maxBarX {
+            self.bg.position.x = self.barStartX
+        }
+        
         // jump code
         self.yVelocity += self.gravity
         self.runner.position.y -= yVelocity
@@ -138,6 +151,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         // ground scrolling
         bar.position.x -= CGFloat(self.groundSpeed)
+        bg.position.x -= CGFloat(2)
         
         blockRunner()
     }
