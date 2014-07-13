@@ -46,8 +46,9 @@ class GameViewController: UIViewController {
         }
     }
 
+    //Whether the view should rotate with the device
     override func shouldAutorotate() -> Bool {
-        return true
+        return false
     }
 
     override func supportedInterfaceOrientations() -> Int {
