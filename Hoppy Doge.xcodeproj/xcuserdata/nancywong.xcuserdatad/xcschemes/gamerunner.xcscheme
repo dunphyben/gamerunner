@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B5BC6BCB1971D532007D3470"
-               BuildableName = "gamerunner.app"
-               BlueprintName = "gamerunner"
-               ReferencedContainer = "container:gamerunner.xcodeproj">
+               BuildableName = "Hoppy Doge.app"
+               BlueprintName = "Hoppy Doge"
+               ReferencedContainer = "container:Hoppy Doge.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B5BC6BE11971D532007D3470"
-               BuildableName = "gamerunnerTests.xctest"
-               BlueprintName = "gamerunnerTests"
-               ReferencedContainer = "container:gamerunner.xcodeproj">
+               BuildableName = "Hoppy DogeTests.xctest"
+               BlueprintName = "Hoppy DogeTests"
+               ReferencedContainer = "container:Hoppy Doge.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B5BC6BCB1971D532007D3470"
-            BuildableName = "gamerunner.app"
-            BlueprintName = "gamerunner"
-            ReferencedContainer = "container:gamerunner.xcodeproj">
+            BuildableName = "Hoppy Doge.app"
+            BlueprintName = "Hoppy Doge"
+            ReferencedContainer = "container:Hoppy Doge.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B5BC6BCB1971D532007D3470"
-            BuildableName = "gamerunner.app"
-            BlueprintName = "gamerunner"
-            ReferencedContainer = "container:gamerunner.xcodeproj">
+            BuildableName = "Hoppy Doge.app"
+            BlueprintName = "Hoppy Doge"
+            ReferencedContainer = "container:Hoppy Doge.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B5BC6BCB1971D532007D3470"
-            BuildableName = "gamerunner.app"
-            BlueprintName = "gamerunner"
-            ReferencedContainer = "container:gamerunner.xcodeproj">
+            BuildableName = "Hoppy Doge.app"
+            BlueprintName = "Hoppy Doge"
+            ReferencedContainer = "container:Hoppy Doge.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

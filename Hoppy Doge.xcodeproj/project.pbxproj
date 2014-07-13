@@ -37,7 +37,7 @@
 		789438A21972105700FE9B6C /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = ../../../../Downloads/background.jpg; sourceTree = "<group>"; };
 		789438A4197211EC00FE9B6C /* blockSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blockSmall.png; path = ../../../../Downloads/blockSmall.png; sourceTree = "<group>"; };
 		789438A6197211F100FE9B6C /* blockBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blockBig.png; path = ../../../../Downloads/blockBig.png; sourceTree = "<group>"; };
-		B5BC6BCC1971D532007D3470 /* gamerunner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gamerunner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5BC6BCC1971D532007D3470 /* Hoppy Doge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hoppy Doge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5BC6BD01971D532007D3470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5BC6BD11971D532007D3470 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5BC6BD31971D532007D3470 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 		B5BC6BD71971D532007D3470 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		B5BC6BDA1971D532007D3470 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5BC6BDC1971D532007D3470 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B5BC6BE21971D532007D3470 /* gamerunnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gamerunnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5BC6BE21971D532007D3470 /* Hoppy DogeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hoppy DogeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5BC6BE71971D532007D3470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5BC6BE81971D532007D3470 /* gamerunnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gamerunnerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,8 +80,8 @@
 		B5BC6BCD1971D532007D3470 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B5BC6BCC1971D532007D3470 /* gamerunner.app */,
-				B5BC6BE21971D532007D3470 /* gamerunnerTests.xctest */,
+				B5BC6BCC1971D532007D3470 /* Hoppy Doge.app */,
+				B5BC6BE21971D532007D3470 /* Hoppy DogeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,9 +133,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B5BC6BCB1971D532007D3470 /* gamerunner */ = {
+		B5BC6BCB1971D532007D3470 /* Hoppy Doge */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B5BC6BEC1971D532007D3470 /* Build configuration list for PBXNativeTarget "gamerunner" */;
+			buildConfigurationList = B5BC6BEC1971D532007D3470 /* Build configuration list for PBXNativeTarget "Hoppy Doge" */;
 			buildPhases = (
 				B5BC6BC81971D532007D3470 /* Sources */,
 				B5BC6BC91971D532007D3470 /* Frameworks */,
@@ -145,14 +145,14 @@
 			);
 			dependencies = (
 			);
-			name = gamerunner;
+			name = "Hoppy Doge";
 			productName = gamerunner;
-			productReference = B5BC6BCC1971D532007D3470 /* gamerunner.app */;
+			productReference = B5BC6BCC1971D532007D3470 /* Hoppy Doge.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B5BC6BE11971D532007D3470 /* gamerunnerTests */ = {
+		B5BC6BE11971D532007D3470 /* Hoppy DogeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B5BC6BEF1971D532007D3470 /* Build configuration list for PBXNativeTarget "gamerunnerTests" */;
+			buildConfigurationList = B5BC6BEF1971D532007D3470 /* Build configuration list for PBXNativeTarget "Hoppy DogeTests" */;
 			buildPhases = (
 				B5BC6BDE1971D532007D3470 /* Sources */,
 				B5BC6BDF1971D532007D3470 /* Frameworks */,
@@ -163,9 +163,9 @@
 			dependencies = (
 				B5BC6BE41971D532007D3470 /* PBXTargetDependency */,
 			);
-			name = gamerunnerTests;
+			name = "Hoppy DogeTests";
 			productName = gamerunnerTests;
-			productReference = B5BC6BE21971D532007D3470 /* gamerunnerTests.xctest */;
+			productReference = B5BC6BE21971D532007D3470 /* Hoppy DogeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +186,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B5BC6BC71971D532007D3470 /* Build configuration list for PBXProject "gamerunner" */;
+			buildConfigurationList = B5BC6BC71971D532007D3470 /* Build configuration list for PBXProject "Hoppy Doge" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -199,8 +199,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B5BC6BCB1971D532007D3470 /* gamerunner */,
-				B5BC6BE11971D532007D3470 /* gamerunnerTests */,
+				B5BC6BCB1971D532007D3470 /* Hoppy Doge */,
+				B5BC6BE11971D532007D3470 /* Hoppy DogeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -254,7 +254,7 @@
 /* Begin PBXTargetDependency section */
 		B5BC6BE41971D532007D3470 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B5BC6BCB1971D532007D3470 /* gamerunner */;
+			target = B5BC6BCB1971D532007D3470 /* Hoppy Doge */;
 			targetProxy = B5BC6BE31971D532007D3470 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -357,7 +357,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = gamerunner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Hoppy Doge";
 			};
 			name = Debug;
 		};
@@ -368,7 +368,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = gamerunner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Hoppy Doge";
 			};
 			name = Release;
 		};
@@ -386,7 +386,7 @@
 				);
 				INFOPLIST_FILE = gamerunnerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Hoppy DogeTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Debug;
@@ -401,7 +401,7 @@
 				);
 				INFOPLIST_FILE = gamerunnerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Hoppy DogeTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Release;
@@ -409,7 +409,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B5BC6BC71971D532007D3470 /* Build configuration list for PBXProject "gamerunner" */ = {
+		B5BC6BC71971D532007D3470 /* Build configuration list for PBXProject "Hoppy Doge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B5BC6BEA1971D532007D3470 /* Debug */,
@@ -418,7 +418,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B5BC6BEC1971D532007D3470 /* Build configuration list for PBXNativeTarget "gamerunner" */ = {
+		B5BC6BEC1971D532007D3470 /* Build configuration list for PBXNativeTarget "Hoppy Doge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B5BC6BED1971D532007D3470 /* Debug */,
@@ -427,7 +427,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B5BC6BEF1971D532007D3470 /* Build configuration list for PBXNativeTarget "gamerunnerTests" */ = {
+		B5BC6BEF1971D532007D3470 /* Build configuration list for PBXNativeTarget "Hoppy DogeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B5BC6BF01971D532007D3470 /* Debug */,

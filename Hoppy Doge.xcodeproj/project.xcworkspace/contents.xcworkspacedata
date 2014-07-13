@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:gamerunner.xcodeproj">
+      location = "self:Hoppy Doge.xcodeproj">
    </FileRef>
 </Workspace>

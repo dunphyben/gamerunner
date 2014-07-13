@@ -21,6 +21,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var groundSpeed = 8
     var runnerBaseline = CGFloat(0)
     var onGround = true
+    var doubleJump = false
     var yVelocity = CGFloat(0)
     let gravity = CGFloat(0.9)
     
@@ -108,7 +109,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func random() -> UInt32 {
-        var range = UInt32(50)..<UInt32(200)
+        var range = UInt32(50)..<UInt32(100)
         return range.startIndex + arc4random_uniform(range.endIndex - range.startIndex + 1)
     }
     
@@ -117,9 +118,21 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     override func touchesBegan(touches: NSSet!, withEvent event: UIEvent!) {
         if self.onGround {
-            self.yVelocity = -18.0
+            self.yVelocity = -12.0
             self.onGround = false
         }
+        else if !self.doubleJump {
+            self.yVelocity = -12.0
+            self.doubleJump = true
+        }
+    }
+    
+    func die() {
+        self.runner.position = CGPointMake(CGRectGetMinX(self.frame)
+            + self.runner.size.width
+            + (self.runner.size.width/4), 300)
+        self.onGround = false
+        self.doubleJump = true
     }
     
     override func touchesEnded(touches: NSSet!, withEvent event: UIEvent!) {
@@ -129,6 +142,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     override func update(currentTime: NSTimeInterval) {
+        if (self.runner.position.x < 0) {
+            die()
+        }
+        
         if self.bar.position.x <= maxBarX {
             self.bar.position.x = self.barStartX
         }
@@ -145,6 +162,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             self.runner.position.y = self.runnerBaseline
             yVelocity = 0.0
             self.onGround = true
+            self.doubleJump = false
         }
         
         // TO-DO: animate the hero
