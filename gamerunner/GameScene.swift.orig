@@ -10,6 +10,7 @@ import SpriteKit
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
+<<<<<<< HEAD
     let runner = SKSpriteNode(imageNamed:"runner")
     let bar = SKSpriteNode(imageNamed:"bottomBar")
     let blockSmall = SKSpriteNode(imageNamed:"blockSmall")
@@ -83,6 +84,27 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.blockBig.physicsBody.collisionBitMask = ColliderType.Runner.toRaw()
         
         self.blockStartX = self.blockSmall.position.x
+=======
+    let _runnerWidth = 75
+    let _runnerHeight = 50
+    let gravity = CGFloat(0.6)
+    
+    var groundSpeed = 5
+    var onGround = true
+    var velocY = CGFloat(0)
+    
+    let ground:SKSpriteNode = SKSpriteNode(imageNamed:"ground.png")
+    let runner:SKSpriteNode = SKSpriteNode(imageNamed: "runner.png")
+    
+    override func didMoveToView(view: SKView) {
+//        physicsWorld.contactDelegate = self
+        
+        runner.size = CGSize(width: _runnerWidth, height: _runnerHeight)
+        runner.zPosition = 100
+        runner.anchorPoint = CGPoint(x: 0.5, y: 0.5)
+        runner.position = CGPoint(x: 100, y: 100)
+        self.addChild(runner);  //adds the sprite to the scene for drawing
+>>>>>>> master
         
         self.blockSmall.name = "blockSmall"
         self.blockBig.name = "blockBig"
@@ -124,6 +146,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             self.bar.position.x = self.barStartX
         }
         
+<<<<<<< HEAD
         // jump code
         self.yVelocity += self.gravity
         self.runner.position.y -= yVelocity
@@ -132,6 +155,22 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             self.runner.position.y = self.runnerBaseline
             yVelocity = 0.0
             self.onGround = true
+=======
+        for touch : AnyObject in touches {
+            let location = touch.locationInNode(self)
+<<<<<<< HEAD
+            let skView = self.view as SKView
+            skView.ignoresSiblingOrder = true
+            var scene = PlayScene(size: self.size)
+            scene.scaleMode = .ResizeFill
+            scene.size = skView.bounds.size
+            skView.presentScene(scene)
+=======
+            
+            //Make the sprite jump a bit.
+            
+>>>>>>> master
+>>>>>>> master
         }
         
         // TO-DO: animate the hero
@@ -141,6 +180,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         blockRunner()
     }
+<<<<<<< HEAD
     
     func blockRunner() {
         for(block, blockStatus) in self.blockStatuses {
@@ -162,6 +202,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 blockStatus.currentGap++
             }
         }
+=======
+   
+    override func update(currentTime: CFTimeInterval) {
+        /* Called before each frame is rendered */
+<<<<<<< HEAD
+=======
+        //Spin the Runner.
+        runner.runAction(SKAction.rotateByAngle(CGFloat(M_PI/24), duration:1))
+>>>>>>> master
+>>>>>>> master
     }
 }
 
